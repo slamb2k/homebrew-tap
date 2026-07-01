@@ -5,12 +5,12 @@
 class Azrl < Formula
   desc "Azure Remote Login — manage multiple Azure accounts via isolated, directory-scoped profiles"
   homepage "https://github.com/slamb2k/azrl"
-  version "0.5.3"
+  version "0.5.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slamb2k/azrl/releases/download/v0.5.3/azrl_0.5.3_darwin_amd64.tar.gz"
-      sha256 "28cd7748ed21fb7cb0829d504a3ab0fdb9a8e733a0533fdce6118924fec4d17f"
+      url "https://github.com/slamb2k/azrl/releases/download/v0.5.4/azrl_0.5.4_darwin_amd64.tar.gz"
+      sha256 "364419b4bb3c9241dd805c532fded374329f492f7c4559d022555a82c45de1a5"
 
       define_method(:install) do
         bin.install "azrl"
@@ -18,8 +18,8 @@ class Azrl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slamb2k/azrl/releases/download/v0.5.3/azrl_0.5.3_darwin_arm64.tar.gz"
-      sha256 "e4b4609db0171ea4b75ff35dfce84aa8a990157b22ca7a669d3c6e00b65ddb26"
+      url "https://github.com/slamb2k/azrl/releases/download/v0.5.4/azrl_0.5.4_darwin_arm64.tar.gz"
+      sha256 "aa9a0746d733cb13c53655885f7410329e24ad79a17dec69cae85492b3f7cbac"
 
       define_method(:install) do
         bin.install "azrl"
@@ -30,16 +30,16 @@ class Azrl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slamb2k/azrl/releases/download/v0.5.3/azrl_0.5.3_linux_amd64.tar.gz"
-      sha256 "25f65f9181580396ee62f1b479b8b1ba7e2cc56f2322a75b3f9c8053f115b7af"
+      url "https://github.com/slamb2k/azrl/releases/download/v0.5.4/azrl_0.5.4_linux_amd64.tar.gz"
+      sha256 "3fb178d2ecd11c0b3d31f50eca0ef97e26759c583374223976a83c1784bfd00e"
       define_method(:install) do
         bin.install "azrl"
         bin.install "ghrl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slamb2k/azrl/releases/download/v0.5.3/azrl_0.5.3_linux_arm64.tar.gz"
-      sha256 "b4bc149a64e253bf38c3ca23bb078bb6c92776f5ed179cab40460563df02d5a0"
+      url "https://github.com/slamb2k/azrl/releases/download/v0.5.4/azrl_0.5.4_linux_arm64.tar.gz"
+      sha256 "ba38e990f1a0ce334101d08cc4538ee35af981518a74c753e1d31eca0e34a300"
       define_method(:install) do
         bin.install "azrl"
         bin.install "ghrl"
